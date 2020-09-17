@@ -2,7 +2,7 @@
 
 ### `Angular Application` 
 
-Create a webpage which contains Events, where user can register for an particular event there are two scenario that is one time user and subscribed user, both can register for an event. there is admin who can add events details and is also able to edit the events or delete the events. there is a chatbot for any help required for the customer related to event. 
+Created a Food Website where user can order food from different restaurant. Different cuisine are available to make an order and ordered list will be added to cart and can veiw ordered food. Restaurant details are available to make an order or to visit Restaurant. Developed a website to understand functionality of front end and to learn setting of web server and database such as MongoDB.
 
 ## Installation and Launch
 
