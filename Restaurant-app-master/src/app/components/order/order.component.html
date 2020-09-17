@@ -1,0 +1,51 @@
+<!-- <p>
+  order works!
+</p>
+<div class="thumbnail" *ngFor="let item of message; let i = index" [attr.data-index]="i">
+  <p>{{i+1}} : </p>
+  <p #poster><img src={{item.poster}} height="100" width="100" ></p>
+  <p #id>{{item.id}}</p>
+  <p #name>{{item.name}}</p>
+  <p #rating>{{item.rating}}</p>
+  <!-- <img ng-src="{{d.poster}}"> -->
+  
+<!-- </div> --> 
+
+
+
+<div class="container">
+    <div class="row">
+      
+  
+  
+  <div *ngFor="let d of dishes">
+      <div class="col-md-4 ">
+          <div class="thumbnail"width="50"height="50">
+    <p #poster><img src={{d.poster}} width="200"height="200" ></p>
+    <p #id>{{d.id}}</p>
+    <p #name>{{d.name|uppercase}}</p>
+    <p #type>{{d.type}}</p>
+    <p #cost>{{d.cost|currency:'Rs.'}}</p>
+    <p #category>{{d.category}}</p>
+    
+    <p #description>{{d.description}}</p>
+    
+
+    <!-- <button class="btn btn-primary"(click)="addOrder(d.name,d.type,d.cost,d.category,d.poster,d.description)">Order</button> -->
+    <button class="btn btn-danger"(click)="deleteFromOrder(d)">Delete</button>
+  
+  </div>
+  
+  
+  </div>      
+  
+  
+  
+  </div>
+      </div>
+  
+  
+    </div>
+
+
+

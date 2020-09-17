@@ -1,0 +1,4 @@
+{
+    "mongoConnectionString":"mongodb://localhost:27017/restaurantdb",
+    "port":3005,"jwtPrivateKey":"khairu"
+}

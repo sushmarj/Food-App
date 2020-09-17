@@ -1,0 +1,28 @@
+
+     <div class="well">
+      
+      <input type="text" name="" id="" #name placeholder="enter dish name" >&nbsp;&nbsp;
+      <input type="text" name="" #type id=""placeholder="enter type">&nbsp;&nbsp;
+      <input type="text" name="" id=""#cost placeholder="enter cost" >&nbsp;&nbsp;
+      <input type="text" name="" id=""#category placeholder="enter category" >&nbsp;&nbsp;
+
+      <input type="text" #poster name="" id=""placeholder="enter poster Url">&nbsp;&nbsp;
+      <input type="text" #desc name="" id=""placeholder="enter description">&nbsp;&nbsp;
+
+      <button (click)="addDishToService(name.value,type.value,cost.value,category.value,poster.value,desc.value)"class="btn btn-success">Add</button>
+     
+    </div>
+
+  
+    <table class="table table-striped table-bordered">
+      <tr>
+        <th>Dish Name</th><th>Dish Type</th><th>Dish Cost</th><th>Dish Category</th><th>Dish image</th><th>Dish Description</th><th></th><th></th>
+      </tr>
+        <tr *ngFor="let dish of dishes">
+        <td>{{dish.name}}</td><td>{{dish.type}}</td><td>{{dish.cost|currency:'Rs.'}}</td><td>{{dish.category}}</td><td><img src={{dish.poster}} height="100"width="100"></td><td>{{dish.description}}</td><td><button class="btn btn-danger" (click)="deleteDishFromService(dish)">Delete</button>
+  </td><td><button (click)="goToEditCuisineComponent(dish._id)" class="btn btn-primary">Edit</button></td>
+        </tr>
+      </table>
+
+    
+

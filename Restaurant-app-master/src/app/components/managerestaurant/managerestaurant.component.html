@@ -1,0 +1,19 @@
+
+<div class="well">
+  <input type="text" #name placeholder="enter restaurant name" name="" id="">&nbsp;&nbsp;&nbsp;
+  <input type="text" #address placeholder="enter address"name="" id="">&nbsp;&nbsp;&nbsp;
+  <input type="text" #contact placeholder="enter contact no" name="" id="">&nbsp;&nbsp;&nbsp;
+  <input type="text" #type placeholder="enter type of restaurants" name="" id="">&nbsp;&nbsp;&nbsp;
+  <button (click)="addRestToService(name.value,address.value,contact.value,type.value)" class="btn btn-success">Add Restaurant</button>
+</div>
+  <div class="well">
+  <table class="table table-bordered table-striped">
+    <tr><th>Restaurant Id</th><th>Restaurant Name</th><th>Address</th><th>contact No.</th><th>Type</th><th></th><th></th></tr>
+    <tr *ngFor="let rest of restaurants">
+      <td>{{rest._id}}</td><td>{{rest.name}}</td><td>{{rest.address}}</td><td>{{rest.contactno}}</td>
+        <td>{{rest.type}}</td><td><button (click)="goToEditComponent(rest._id)"class="btn btn-primary">Edit</button></td><td><button (click)="deleteEventFromService(rest)"class="btn btn-danger">Delete</button></td>
+
+    </tr>
+  </table>
+
+</div>

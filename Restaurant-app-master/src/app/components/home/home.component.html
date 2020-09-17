@@ -1,0 +1,41 @@
+<div>
+  <div class="row">
+    
+
+
+<div *ngFor="let d of dishes">
+    <div class="col-md-4 ">
+        <div class="thumbnail"width="50"height="50">
+  <p #poster><img src={{d.poster}} width="314"height="200" ></p>
+  <p #id>{{d.id}}</p>
+  <p #name>{{d.name|uppercase}}</p>
+  <p #type>{{d.type}}</p>
+  <p #cost>{{d.cost|currency:'Rs.'}}</p>
+  <p #category>{{d.category}}</p>
+  
+  <p #description>{{d.description}}</p>
+
+   
+  <button (click)="addDishToCartService(d.name,d.type,d.cost,d.category,d.poster,d.description)" align="right"class="btn btn-primary">Add to Cart</button>
+   <!-- <button class="btn btn-primary">{{name.value}}</button> -->
+</div>
+
+
+</div>
+
+
+</div>
+  
+
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+

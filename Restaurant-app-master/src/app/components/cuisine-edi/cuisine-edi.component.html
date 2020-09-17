@@ -1,0 +1,26 @@
+
+<div class="col-md-4 col-md-offset-4">
+  <form action="">
+    <div class="form-group">
+<label>
+Dish Name:
+</label><input type="text"[(ngModel)]="dishObject.name" name="name"class="form-control"id="">
+<label>
+    Dish Type:
+    </label><input type="text"[(ngModel)]="dishObject.type" name="type"class="form-control"id="">
+    <label>
+        Dish Cost:
+        </label><input type="text" [(ngModel)]="dishObject.cost"name="cost"class="form-control"id="">
+                
+    <label>
+        Dish Description:
+        </label><input type="text" [(ngModel)]="dishObject.description" name="description"class="form-control"id="">
+        <label>
+          Dish Poster:
+          </label><input type="text" [(ngModel)]="dishObject.poster" name="poster"class="form-control"id="">
+            </div>
+<button (click)="save()"class="btn btn-primary">Save</button>&nbsp;
+<button (click)="cancel()"class="btn btn-success">Cancel</button>
+  </form>
+
+</div>

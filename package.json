@@ -1,0 +1,28 @@
+{
+  "name": "restaurant-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "backend": "node index.js",
+    "Restaurant-app-master": "npm run start --prefix Restaurant-app-master",
+    "dev": "concurrently \"npm run backend\" \"npm run Restaurant-app-master\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "config": "^3.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "g": "^2.0.1",
+    "joi": "^14.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.3.13",
+    "nodemon": "^1.18.6"
+  }
+}
